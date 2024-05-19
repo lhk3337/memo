@@ -9,15 +9,15 @@ $save_btn.addEventListener("click", () => {
     localStorage.setItem("textContent", $tarea.value);
     $reset_fieldset.style.cursor = "pointer";
     $reset_fieldset.disabled = false;
-    alert("저장 되었습니다.");
+    alert("The content is saved.");
   } else {
-    alert("내용을 입력해주세요.");
+    alert("Please enter the content.");
   }
 });
 
 $reset_btn.addEventListener("click", () => {
   if (localStorage.getItem("textContent")) {
-    if (confirm("삭제 하시겠습니까?")) {
+    if (confirm("Would you like to delete the content?")) {
       localStorage.clear();
       $tarea.value = "";
       $reset_fieldset.disabled = true;
