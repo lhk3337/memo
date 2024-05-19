@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://memo.holiminfo.com/sitemap.xml
+Host: https://memo.holiminfo.com
